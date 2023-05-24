@@ -111,7 +111,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path="/employees-manager"
+          path="/"
           element={
             <Tasks
               employeesData={employeesData}
