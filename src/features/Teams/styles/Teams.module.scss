@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.teams {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: $primary;
+
+  .buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .button {
+      margin-bottom: 1rem;
+      width: 50%;
+      font-weight: bold;
+      background: $white;
+      color: $primary;
+
+      &:hover {
+        background-color: $details;
+      }
+    }
+  }
+
+  .employeesList {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+    .buttons {
+      width: 100%;
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}

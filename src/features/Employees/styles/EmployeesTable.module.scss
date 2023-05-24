@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.employeesTable {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: $primary;
+
+
+  button{
+    width: 90%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    background: $white;
+    color: $primary;
+  }
+
+  .tableCard{
+    width:90%;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    text-align: center;
+
+    tr {
+      margin-top: 1em;
+    }
+
+    td {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    thead {
+      visibility: hidden;
+      position: absolute;
+    }
+    td{
+      display: block;
+    }
+  }
+}

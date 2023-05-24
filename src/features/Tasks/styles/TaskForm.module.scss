@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+.finish {
+  background-color: $details;
+  border-color: $details;
+  height: 3rem;
+  width: 80%;
+}
+.form {
+  input,
+  select,
+  textarea {
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 3px solid $primary;
+
+    &:focus {
+      border-color: $details;
+      box-shadow: none;
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+
+    button {
+      width: 30%;
+    }
+  }
+}

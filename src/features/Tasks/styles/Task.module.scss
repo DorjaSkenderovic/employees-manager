@@ -1,0 +1,67 @@
+@import "../../../styles/variables";
+
+.taskCard {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  min-height: 10rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+    .info {
+      width: 60%;
+      margin-left: 1rem;
+    }
+
+    .date {
+      display: flex;
+      flex-direction: column;
+      width: 8rem;
+      height: 8rem;
+      border: 1px solid #ececec;
+      background-color: #2a2a2a;
+      color: white;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .month {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .year {
+      font-size: 0.75rem;
+    }
+
+    .day {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .description {
+    width: 50%;
+    align-items: center;
+  }
+
+}
+@media (max-width: 720px) {
+    .taskCard {
+      flex-direction: column;
+      height: auto;
+      .about,
+      .description {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }

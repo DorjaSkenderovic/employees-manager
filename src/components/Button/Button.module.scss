@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.button {
+  font: inherit;
+  border: 1px solid $primary;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  background: $primary;
+  color: $white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: $details;
+  border-color: $details;
+}
+
+.button:focus {
+  outline: none;
+}

@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+
+.top {
+  background-color: $primary;
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .display {
+    width: 90%;
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+      text-align: center;
+
+      .list {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        height: 3em;
+      }
+    }
+  }
+  @media screen and (max-width: 720px) {
+    thead {
+      visibility: hidden;
+      position: absolute;
+    }
+    td {
+      display: block;
+    }
+  } 
+}
